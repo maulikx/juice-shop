@@ -1,0 +1,14 @@
+name: Super-Linter
+
+on:
+  push:
+    branches:
+    - main
+jobs:
+  super-lint:
+    name: lint code base
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Dastardly Scan Action
+        uses: PortSwigger/dastardly-github-action@v1.0.0
